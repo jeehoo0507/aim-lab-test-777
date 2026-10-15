@@ -1,0 +1,6 @@
+group: core_s0
+seed: 0
+data_dir: data/in100
+epochs: 40
+batch_size: 256
+students: [none, student_attn, random, student_attn_inv, "tau_match:student_attn"]

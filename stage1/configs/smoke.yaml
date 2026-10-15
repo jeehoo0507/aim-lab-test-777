@@ -1,0 +1,16 @@
+# all criteria in one group, tiny run; data_dir/out are overridden by scripts/smoke_test.sh
+group: smoke
+seed: 0
+data_dir: data/in100
+out: results_smoke
+epochs: 2
+batch_size: 128
+train_limit: 2000
+probe_train: 200
+probe_val: 400
+probe_every: 1
+ckpt_every: 1
+log_every: 5
+warmup_epochs: 1
+students: [none, student_attn, student_attn_inv, random, teacher_attn, teacher_attn_noisy, rollout,
+           student_attn_noce, "tau_const:2", "tau_match:student_attn"]

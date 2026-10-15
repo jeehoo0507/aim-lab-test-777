@@ -1,0 +1,6 @@
+timm>=0.9
+pyyaml
+numpy
+scipy
+matplotlib
+pillow
